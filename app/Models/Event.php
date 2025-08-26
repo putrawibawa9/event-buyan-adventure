@@ -9,8 +9,10 @@ class Event extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'nama_event', 'tanggal_mulai', 'tanggal_selesai', 'lokasi', 'deskripsi'
+    protected $guarded = [
+        'id',
+        'created_at',
+        'updated_at',
     ];
 
     public function penyewas()

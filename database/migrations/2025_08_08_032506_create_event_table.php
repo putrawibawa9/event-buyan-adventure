@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('event', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_event');
-            $table->date('tanggal_mulai');
-            $table->date('tanggal_selesai');
-            $table->string('lokasi');
-            $table->text('deskripsi')->nullable();
+            $table->string('name');
+            $table->string('location');
+            $table->date('date');
+            $table->text('description')->nullable();
+            $table->text('total_person')->nullable();
+            $table->text('image')->nullable();
             $table->timestamps();
         });
     }
