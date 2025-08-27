@@ -28,11 +28,11 @@
 	<li class="menu-item has-children"><a href="#">Pages</a>
 		<ul class="sub-menu">
 			<!-- <li><a href="about.php">About Us</a></li> -->
-			<!-- <li><a href="gallery.php">Our Gallery</a></li> -->
+		 <li><a href="https://www.buyanadventureorganizer.com/gallery.php">Our Gallery</a></li> 
 			<!-- <li><a href="events.php">Our Events</a></li> -->
 			<!-- <li><a href="shop.php">Our Shop</a></li>
 			<li><a href="product-details.php">Product Details</a></li> -->
-			<li><a href="contact.php">Contact</a></li>
+			<li><a href="https://www.buyanadventureorganizer.com/contact.php">Contact</a></li>
 		</ul>
 	</li>
 	<li class="menu-item search-item">
