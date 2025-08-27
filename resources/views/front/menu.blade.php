@@ -1,7 +1,7 @@
 <ul>
 	<li class="menu-item has-children"><a href="#">Home</a>
 		<ul class="sub-menu">
-			<li><a href="index.php">Home</a></li>
+			<li><a href="https://www.buyanadventureorganizer.com/">Home</a></li>
 			<!-- <li><a href="index-2.php">Home 02</a></li>
 			<li><a href="index-3.php">Home 03</a></li>
 			<li><a href="index-4.php">Home 04</a></li> -->
