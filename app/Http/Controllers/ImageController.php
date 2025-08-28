@@ -24,8 +24,14 @@ class ImageController extends Controller
         $request->validate([
             'image' => 'required|image',
         ]);
-        $path = $request->file('image')->store('event_images', 'public');
-        $event->images()->create(['path' => $path]);
+        $imageFile = $request->file('image');
+        $destinationPath = public_path('uploads/events');
+        if (!file_exists($destinationPath)) {
+            mkdir($destinationPath, 0777, true);
+        }
+        $filename = uniqid().'.'.$imageFile->getClientOriginalExtension();
+        $imageFile->move($destinationPath, $filename);
+        $event->images()->create(['path' => 'uploads/events/' . $filename]);
         return redirect()->route('events.images.index', $event)->with('success', 'Image uploaded!');
     }
 

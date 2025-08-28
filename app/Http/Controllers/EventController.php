@@ -25,9 +25,13 @@ class EventController extends Controller
 
     if ($request->hasFile('image')) {
         $image = $request->file('image');
-        $path = $image->store('events', 'uploads'); 
-        // hasilnya: public/uploads/events/namafile.jpg
-        $data['image'] = $path;
+        $destinationPath = public_path('uploads/events');
+        if (!file_exists($destinationPath)) {
+            mkdir($destinationPath, 0777, true);
+        }
+        $filename = uniqid().'.'.$image->getClientOriginalExtension();
+        $image->move($destinationPath, $filename);
+        $data['image'] = 'uploads/events/' . $filename;
     }
 
     Event::create($data);
