@@ -9,10 +9,7 @@
                 <h2 class="text-lg font-semibold">Total Event</h2>
                 <p class="text-3xl">{{ $total_event }}</p>
             </div>
-            <div class="bg-green-100 p-4 rounded">
-                <h2 class="text-lg font-semibold">Total Penyewa</h2>
-                <p class="text-3xl">{{ $total_penyewa }}</p>
-            </div>
+         
         </div>
     </div>
     <div class="bg-white p-6 rounded shadow">
