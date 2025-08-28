@@ -31,7 +31,7 @@ class ImageController extends Controller
         }
         $filename = uniqid().'.'.$imageFile->getClientOriginalExtension();
         $imageFile->move($destinationPath, $filename);
-        $event->images()->create(['path' => 'uploads/events/' . $filename]);
+        $event->images()->create(['path' => 'events/' . $filename]);
         return redirect()->route('events.images.index', $event)->with('success', 'Image uploaded!');
     }
 
