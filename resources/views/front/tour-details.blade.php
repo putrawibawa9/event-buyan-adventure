@@ -16,9 +16,9 @@ $page_title = "Gallery";
                         <!--=== Single Gallery Item ===-->
                         <div class="single-gallery-item mb-30 wow fadeInUp">
                             <div class="gallery-img">
-                                <img src="public/uploads/{{$image->path }}" alt="Gallery Image">
+                                <img src="{{ asset($image->path) }}" alt="Gallery Image">
                                 <div class="hover-overlay">
-                                    <a href="public/uploads/{{$image->path }}" class="icon-btn img-popup"><i class="far fa-plus"></i></a>
+                                    <a href="{{ asset($image->path) }}" class="icon-btn img-popup"><i class="far fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
