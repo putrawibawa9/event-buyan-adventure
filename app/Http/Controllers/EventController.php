@@ -20,18 +20,22 @@ class EventController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $data = $request->all();
+{
+    $data = $request->all();
 
-        if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $path = $image->store('events', 'public');
-            $data['image'] = $path;
-        }
-
-        Event::create($data);
-        return redirect()->route('events.index')->with('success', 'Event created successfully!');
+    if ($request->hasFile('image')) {
+        $image = $request->file('image');
+        $path = $image->store('events', 'uploads'); 
+        // hasilnya: public/uploads/events/namafile.jpg
+        $data['image'] = $path;
     }
+
+    Event::create($data);
+
+    return redirect()->route('events.index')
+        ->with('success', 'Event created successfully!');
+}
+
 
     public function show(Event $event)
     {

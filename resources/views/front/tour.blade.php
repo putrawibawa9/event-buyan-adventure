@@ -23,7 +23,7 @@ $page_title = "Event";
                         <!--=== Single Place Item ===-->
                         <div class="single-place-item mb-60 wow fadeInUp">
                             <div class="place-img">
-                                <img src="{{ asset('storage/' . $event->image) }}" alt="Place Image"  width="410" height="280" style="object-fit: cover;">
+                                <img src="/uploads/{{$event->image}}"  alt="Place Image"  width="410" height="280" style="object-fit: cover;">
                             </div>
                             <div class="place-content">
                                 <div class="info">
