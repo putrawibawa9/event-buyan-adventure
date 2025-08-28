@@ -67,15 +67,11 @@
                 <div class="container-fluid">
                     <div class="primary-menu black-bg">
                         <!--====== Site Branding ======-->
-                        <div class="site-brading d-block d-xl-none">
-                            <a href="index-3.php" class="brand-logo"><img src="assets/images/logo/logo.jpg" alt="Logo"></a>
-                        </div>
+                       
                         <!--====== Nav Menu ======-->
                         <div class="nav-menu">
                             <!--====== Site Branding ======-->
-                            <div class="mobile-logo mb-30 d-block d-xl-none">
-                                <a href="index.php" class="brand-logo"><img src="assets/images/logo/logo.jpg" alt="Site Logo"></a>
-                            </div>
+                            
                             <!--=== Nav Search ===-->
                             <div class="nav-search mb-30 d-block d-xl-none ">
                                 <form>
