@@ -8,11 +8,9 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        // Contoh data dashboard sederhana
-        $data = [
-            'total_event' => 10,
-            'total_penyewa' => 5,
-        ];
-        return view('dashboard', $data);
+        $total_event = \App\Models\Event::count();
+        $total_penyewa = 10;
+        $events = \App\Models\Event::all();
+        return view('dashboard', compact('total_event', 'total_penyewa', 'events'));
     }
 }

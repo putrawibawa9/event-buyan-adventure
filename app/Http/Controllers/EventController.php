@@ -32,7 +32,7 @@ class EventController extends Controller
 
     Event::create($data);
 
-    return redirect()->route('events.index')
+    return redirect()->route('dashboard')
         ->with('success', 'Event created successfully!');
 }
 
@@ -55,12 +55,12 @@ class EventController extends Controller
             'location' => 'required',
         ]);
         $event->update($validated);
-        return redirect()->route('events.index')->with('success', 'Event updated successfully!');
+        return redirect()->route('dashboard')->with('success', 'Event updated successfully!');
     }
 
     public function destroy(Event $event)
     {
         $event->delete();
-        return redirect()->route('events.index')->with('success', 'Event deleted successfully!');
+        return redirect()->route('dashboard')->with('success', 'Event deleted successfully!');
     }
 }

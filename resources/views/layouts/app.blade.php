@@ -12,7 +12,7 @@
             <a href="/" class="text-xl font-bold">Buyan Adventure Organizer</a>
             <div>
                 <a href="/dashboard" class="mr-4 text-blue-600">Dashboard</a>
-                <a href="/events" class="text-blue-600">Event</a>
+                <a href="/events" class="text-blue-600">Tampilan User</a>
             </div>
         </div>
     </nav>

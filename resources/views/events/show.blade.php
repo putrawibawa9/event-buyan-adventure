@@ -13,7 +13,7 @@
         <div class="mb-4">
             <strong>Lokasi:</strong> {{ $event->location }}
         </div>
-        <a href="{{ route('events.index') }}" class="text-blue-500">Kembali ke Daftar Event</a>
+        <a href="{{ route('dashboard') }}" class="text-blue-500">Kembali ke Daftar Event</a>
     </div>
 </div>
 @endsection
