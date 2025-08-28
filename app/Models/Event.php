@@ -19,4 +19,9 @@ class Event extends Model
     {
         return $this->hasMany(Penyewa::class);
     }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
 }
