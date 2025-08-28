@@ -39,11 +39,13 @@ class EventController extends Controller
 
     public function show(Event $event)
     {
-        return view('events.show', compact('event'));
+        $images = $event->images;
+        return view('front.tour-details', compact('event', 'images'));
     }
 
     public function edit(Event $event)
     {
+       
         return view('events.edit', compact('event'));
     }
 

@@ -12,6 +12,11 @@ Route::get('/', function () {
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::resource('events', EventController::class);
 
+use App\Http\Controllers\ImageController;
+Route::resource('events.images', ImageController::class);
+
 Route::get('/front', function () {
     return view('front.tour');
 });
+
+

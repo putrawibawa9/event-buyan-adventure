@@ -45,7 +45,7 @@ $page_title = "Event";
 </span>
 
                                         {{-- <span><i class="far fa-user"></i>25</span> --}}
-                                        {{-- <span><a href="tour-details.php">Details<i class="far fa-long-arrow-right"></i></a></span> --}}
+                                        <span><a href="{{ route('events.show', $event->id) }}">Details<i class="far fa-long-arrow-right"></i></a></span>
                                     </div>
                                 </div>
                             </div>
