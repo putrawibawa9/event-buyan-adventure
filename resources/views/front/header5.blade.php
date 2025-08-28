@@ -7,9 +7,7 @@
                         <div class="col-xl-3 d-none d-xl-block">
                             <!--====== Site Branding ======-->
                             <div class="site-brading">
-                              <a href="{{ url('/') }}" class="brand-logo">
-    <img src="{{ asset('assets/images/logo.jpg') }}" alt="Logo buyan">
-</a>
+                                <a href="index-3.php" class="brand-logo"><img src="assets/images/logo/logo-white.jpg" alt="Logo"></a>
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-12">
@@ -36,8 +34,8 @@
                                                     <i class="far fa-envelope"></i>
                                                 </div>
                                                 <div class="info">
-                                                    <span class="title">Email </span>
-                                                    <h5><a href="mailto:support@gmail.com">buyan.adventure@gmail.com</a></h5>
+                                                    <span class="title">Email</span>
+                                                    <h5><a href="mailto:buyan.adventure@gmail.com">buyan.adventure@gmail.com</a></h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,34 +59,21 @@
                     </div>
                 </div>
             </div>
-            <!--====== Header Navigation ======-->
+    <!--====== Header Navigation ======-->
             <div class="header-navigation navigation-white">
                 <div class="nav-overlay"></div>
                 <div class="container-fluid">
                     <div class="primary-menu black-bg">
                         <!--====== Site Branding ======-->
-                        <div class="site-brading d-block d-xl-none">
-                            <a href="index-3.php" class="brand-logo"><img src="assets/images/logo/logo.jpg" alt="Logo"></a>
-                        </div>
+                       
                         <!--====== Nav Menu ======-->
                         <div class="nav-menu">
                             <!--====== Site Branding ======-->
-                            <div class="mobile-logo mb-30 d-block d-xl-none">
-                                <a href="index.php" class="brand-logo"><img src="assets/images/logo/logo.jpg" alt="Site Logo"></a>
-                            </div>
-                            <!--=== Nav Search ===-->
-                            <div class="nav-search mb-30 d-block d-xl-none ">
-                                <form>
-                                    <div class="form_group">
-                                        <input type="email" class="form_control" placeholder="Search Here" name="email" required>
-                                        <button class="search-btn"><i class="fas fa-search"></i></button>
-                                    </div>
-                                </form>
-                            </div>
+                          
+                        
                             <!--====== Main Menu ======-->
                             <nav class="main-menu">
-                         
-                            @include('front.menu')
+                            <?php require_once('parts/header/menu.php'); ?>
                             </nav>
                             <!--====== Menu Button ======-->
                             <div class="menu-button mt-40 d-xl-none">
@@ -97,12 +82,7 @@
                         </div>
                         <!--====== Nav Right Item ======-->
                         <div class="nav-right-item">
-                            <!-- <div class="lang-dropdown">
-                                <select class="wide">
-                                    <option value="English">English</option>
-                                    <option value="French">French</option>
-                                </select>
-                            </div> -->
+                         
                             <div class="menu-button d-xl-block d-none">
                                 <a href="contact.php" class="main-btn primary-btn">Book Now<i class="fas fa-paper-plane"></i></a>
                             </div>
