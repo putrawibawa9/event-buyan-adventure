@@ -8,7 +8,8 @@
                             <!--=== Single CTA Item ===-->
                             <div class="single-cta-item pr-lg-60 mb-40">
                                 <div class="icon">
-                                    <img src="{{ asset('') }}" alt="Icon">
+                                <img src="{{ asset('assets/images/icon/support.png') }}" alt="Icon">
+
                                 </div>
                                 <div class="content">
                                     <h3 class="title">Perlu Bantuan?</h3>
@@ -20,7 +21,8 @@
                             <!--=== Single CTA Item ===-->
                             <div class="single-cta-item pl-lg-60 mb-40">
                                 <div class="icon">
-                                    <img src="assets/images/icon/travel.png" alt="Icon">
+                                    
+                                    <img src="{{ asset('assets/images/icon/travel.png') }}" alt="Icon">
                                 </div>
                                 <div class="content">
                                     <h3 class="title">Siap Untuk Berpetualang?</h3>
