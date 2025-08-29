@@ -8,7 +8,7 @@
                             <!--=== Single CTA Item ===-->
                             <div class="single-cta-item pr-lg-60 mb-40">
                                 <div class="icon">
-                                    <img src="assets/images/icon/support.png" alt="Icon">
+                                    <img src="{{ asset('') }}" alt="Icon">
                                 </div>
                                 <div class="content">
                                     <h3 class="title">Perlu Bantuan?</h3>
