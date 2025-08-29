@@ -35,7 +35,7 @@ $page_title = "Event";
                                         <li><i class="fas fa-star"></i></li>
                                         <li><a href="#">(4.9)</a></li>
                                     </ul> --}}
-                                    <h4 class="title"><a href="tour-details.php">{{ $event->name }}</a></h4>
+                                    <h4 class="title"><a  href="{{ route('events.show', $event->id) }}">{{ $event->name }}</a></h4>
                                     <p class="location"><i class="far fa-map-marker-alt"></i>{{ $event->location }}</p>
                                     {{-- <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p> --}}
                                     <div class="meta">

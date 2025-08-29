@@ -33,7 +33,7 @@
                     <td class="border px-4 py-2">{{ $event->date }}</td>
                     <td class="border px-4 py-2">{{ $event->location }}</td>
                     <td class="border px-4 py-2">
-                        <a href="{{ route('events.show', $event) }}" class="text-blue-500">Lihat</a> |
+                    
                         <a href="{{ route('events.edit', $event) }}" class="text-yellow-500">Edit</a> |
                         <a href="{{ route('events.images.index', $event) }}" class="text-green-600">Images</a> |
                         <form action="{{ route('events.destroy', $event) }}" method="POST" style="display:inline;">
