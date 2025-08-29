@@ -11,7 +11,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             @foreach($images as $image)
             <div class="border rounded p-2 flex flex-col items-center">
-                <img src="{{ asset('uploads/' . $image->path) }}" alt="Event Image" class="h-40 object-cover mb-2">
+                <img src="{{ asset('public/uploads/' . $image->path) }}" alt="Event Image" class="h-40 object-cover mb-2">
                 <form action="{{ route('events.images.destroy', [$event, $image]) }}" method="POST">
                     @csrf
                     @method('DELETE')
