@@ -29,7 +29,7 @@
 		<ul class="sub-menu">
 			<!-- <li><a href="about.php">About Us</a></li> -->
 		 <li><a href="https://www.buyanadventureorganizer.com/gallery.php">Our Gallery</a></li> 
-			<<li><a href="https://admin.buyanadventureorganizer.com/events">Our Events</a></li> 
+			<li><a href="https://admin.buyanadventureorganizer.com/events">Our Events</a></li> 
 			<!-- <li><a href="shop.php">Our Shop</a></li>
 			<li><a href="product-details.php">Product Details</a></li> -->
 			<li><a href="https://www.buyanadventureorganizer.com/contact.php">Contact</a></li>

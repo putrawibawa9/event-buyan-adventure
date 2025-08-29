@@ -31,7 +31,7 @@ class EventController extends Controller
         }
         $filename = uniqid().'.'.$image->getClientOriginalExtension();
         $image->move($destinationPath, $filename);
-        $data['image'] = 'uploads/events/' . $filename;
+        $data['image'] = 'events/' . $filename;
     }
 
     Event::create($data);
